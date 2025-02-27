@@ -9,9 +9,9 @@ public interface IBookService {
 
     public Book getBookById(Long id);
 
-    public Book saveBook(Book book);
+    public Book createBook(String title, Long authorId, List<Long> genreIds);
 
-    public Book updateBook(Book book);
+    public Book updateBook(Long id, String title, Long authorId, List<Long> genreIds);
 
     public void deleteBook(Long id);
 }
